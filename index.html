@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./dist/main.dad6c793.css" />
+    <script src="./main.js" defer></script>
+    <title>Frontend Mentor | Calculator app</title>
+  </head>
+  <body class="theme-1-bg-main">
+    <main class="container">
+      <header class="header">
+        <h1 class="logo theme-1-text-white">clac</h1>
+        <div class="theme theme-1-text-white">
+          <h2 class="theme__title">theme</h2>
+          <ol class="theme__list theme-1-bg-keypad">
+            <li
+              class="theme__item theme-1-key-output-bg"
+              data-theme-number="1"
+            ></li>
+            <li class="theme__item" data-theme-number="2"></li>
+            <li class="theme__item" data-theme-number="3"></li>
+          </ol>
+        </div>
+      </header>
+
+      <section class="display theme-1-bg-screen">
+        <span class="display__output theme-1-text-white">0</span>
+      </section>
+
+      <section class="keypad theme-1-bg-keypad">
+        <button
+          class="key key-0 theme-1-key-number-bg theme-1-key-number-shadow theme-1-text-color-1 key-short key-number"
+          data-key="0"
+        >
+          0
+        </button>
+        <button
+          class="key key-1 theme-1-key-number-bg theme-1-key-number-shadow theme-1-text-color-1 key-short key-number"
+          data-key="1"
+        >
+          1
+        </button>
+        <button
+          class="key key-2 theme-1-key-number-bg theme-1-key-number-shadow theme-1-text-color-1 key-short key-number"
+          data-key="2"
+        >
+          2
+        </button>
+        <button
+          class="key key-3 theme-1-key-number-bg theme-1-key-number-shadow theme-1-text-color-1 key-short key-number"
+          data-key="3"
+        >
+          3
+        </button>
+        <button
+          class="key key-4 theme-1-key-number-bg theme-1-key-number-shadow theme-1-text-color-1 key-short key-number"
+          data-key="4"
+        >
+          4
+        </button>
+        <button
+          class="key key-5 theme-1-key-number-bg theme-1-key-number-shadow theme-1-text-color-1 key-short key-number"
+          data-key="5"
+        >
+          5
+        </button>
+        <button
+          class="key key-6 theme-1-key-number-bg theme-1-key-number-shadow theme-1-text-color-1 key-short key-number"
+          data-key="6"
+        >
+          6
+        </button>
+        <button
+          class="key key-7 theme-1-key-number-bg theme-1-key-number-shadow theme-1-text-color-1 key-short key-number"
+          data-key="7"
+        >
+          7
+        </button>
+        <button
+          class="key key-8 theme-1-key-number-bg theme-1-key-number-shadow theme-1-text-color-1 key-short key-number"
+          data-key="8"
+        >
+          8
+        </button>
+        <button
+          class="key key-9 theme-1-key-number-bg theme-1-key-number-shadow theme-1-text-color-1 key-short key-number"
+          data-key="9"
+        >
+          9
+        </button>
+        <button
+          class="key key-plus theme-1-key-number-bg theme-1-key-number-shadow theme-1-text-color-1 key-short key-number-sign"
+          data-key="+"
+        >
+          +
+        </button>
+        <button
+          class="key key-minus theme-1-key-number-bg theme-1-key-number-shadow theme-1-text-color-1 key-short key-number-sign"
+          data-key="-"
+        >
+          -
+        </button>
+        <button
+          class="key key-time theme-1-key-number-bg theme-1-key-number-shadow theme-1-text-color-1 key-short key-number-sign"
+          data-key="x"
+        >
+          x
+        </button>
+        <button
+          class="key key-div theme-1-key-number-bg theme-1-key-number-shadow theme-1-text-color-1 key-short key-number-sign"
+          data-key="/"
+        >
+          /
+        </button>
+        <button
+          class="key key-dot theme-1-key-number-bg theme-1-key-number-shadow theme-1-text-color-1 key-short"
+          data-key="."
+        >
+          .
+        </button>
+        <button
+          class="key key-del theme-1-key-function-bg theme-1-key-function-shadow theme-1-text-white key-short key-function"
+          data-key="del"
+        >
+          del
+        </button>
+        <button
+          class="key key-reset theme-1-key-function-bg theme-1-key-function-shadow theme-1-text-white key-long key-function"
+          data-key="reset"
+        >
+          reset
+        </button>
+        <button
+          class="key key-ouput theme-1-key-output-bg theme-1-key-output-shadow theme-1-text-white key-long key-function key-output"
+          data-key="output"
+        >
+          =
+        </button>
+      </section>
+    </main>
+  </body>
+</html>

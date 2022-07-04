@@ -1,0 +1,95 @@
+@use "../abstract/" as *;
+
+$utilties: (
+  "theme-1": (
+    "background-color": (
+      "values": (
+        "-bg-main": $theme-1-bg-main,
+        "-bg-keypad": $theme-1-bg-keypad,
+        "-bg-screen": $theme-1-bg-screen,
+        "-key-function-bg": $theme-1-key-function-bg,
+        "-key-output-bg": $theme-1-key-output-bg,
+        "-key-number-bg": $theme-1-key-number-bg,
+      ),
+    ),
+    "box-shadow": (
+      "values": (
+        "-key-function-shadow": $key-shadow $theme-1-key-function-shadow,
+        "-key-output-shadow": $key-shadow $theme-1-key-output-shadow,
+        "-key-number-shadow": $key-shadow $theme-1-key-number-shadow,
+      ),
+    ),
+    "color": (
+      "values": (
+        "-text-color-1": $theme-1-text-color,
+        "-text-color-2": $theme-1-text-white,
+        "-text-white": $theme-1-text-white,
+      ),
+    ),
+  ),
+  "theme-2": (
+    "background-color": (
+      "values": (
+        "-bg-main": $theme-2-bg-main,
+        "-bg-keypad": $theme-2-bg-keypad,
+        "-bg-screen": $theme-2-bg-screen,
+        "-key-function-bg": $theme-2-key-function-bg,
+        "-key-output-bg": $theme-2-key-output-bg,
+        "-key-number-bg": $theme-2-key-number-bg,
+      ),
+    ),
+    "box-shadow": (
+      "values": (
+        "-key-function-shadow": $key-shadow $theme-2-key-function-shadow,
+        "-key-output-shadow": $key-shadow $theme-2-key-output-shadow,
+        "-key-number-shadow": $key-shadow $theme-2-key-number-shadow,
+      ),
+    ),
+    "color": (
+      "values": (
+        "-text-color-1": $theme-2-text-color,
+        "-text-color-2": $theme-2-text-color,
+        "-text-white": $theme-2-text-white,
+      ),
+    ),
+  ),
+  "theme-3": (
+    "background-color": (
+      "values": (
+        "-bg-main": $theme-3-bg-main,
+        "-bg-keypad": $theme-3-bg-keypad,
+        "-bg-screen": $theme-3-bg-screen,
+        "-key-function-bg": $theme-3-key-function-bg,
+        "-key-output-bg": $theme-3-key-output-bg,
+        "-key-number-bg": $theme-3-key-number-bg,
+      ),
+    ),
+    "box-shadow": (
+      "values": (
+        "-key-function-shadow": $key-shadow $theme-3-key-function-shadow,
+        "-key-output-shadow": $key-shadow $theme-3-key-output-shadow,
+        "-key-number-shadow": $key-shadow $theme-3-key-number-shadow,
+      ),
+    ),
+    "color": (
+      "values": (
+        "-text-color-1": $theme-3-text-color-1,
+        "-text-color-2": $theme-3-text-color-1,
+        // "-text-color-2": $theme-3-text-color-2,
+        "-text-white": $theme-3-text-white,
+      ),
+    ),
+  ),
+);
+
+@each $k, $m in $utilties {
+  @each $property, $map in $m {
+    $values: map-get($map, "values");
+
+    @each $key, $value in $values {
+      .#{$k}#{$key} {
+        #{$property}: $value;
+      }
+    }
+  }
+}

@@ -1,0 +1,64 @@
+// COLORS
+$theme-1-bg-main: hsl(222, 26%, 31%);
+$theme-1-bg-keypad: hsl(223, 31%, 20%);
+$theme-1-bg-screen: hsl(224, 36%, 15%);
+
+$theme-1-key-function-bg: hsl(225, 21%, 49%);
+$theme-1-key-function-shadow: hsl(224, 28%, 35%);
+$theme-1-key-output-bg: hsl(6, 63%, 50%);
+$theme-1-key-output-shadow: hsl(6, 70%, 34%);
+$theme-1-key-number-bg: hsl(30, 25%, 89%);
+$theme-1-key-number-shadow: hsl(28, 16%, 65%);
+
+$theme-1-text-color: hsl(221, 14%, 31%);
+$theme-1-text-white: hsl(0, 0, 100%);
+
+// ----------------------------------------------------
+
+$theme-2-bg-main: hsl(0, 0%, 90%);
+$theme-2-bg-keypad: hsl(0, 5%, 81%);
+$theme-2-bg-screen: hsl(0, 0%, 93%);
+
+$theme-2-key-function-bg: hsl(185, 42%, 37%);
+$theme-2-key-function-shadow: hsl(185, 58%, 25%);
+$theme-2-key-output-bg: hsl(25, 98%, 40%);
+$theme-2-key-output-shadow: hsl(25, 99%, 27%);
+$theme-2-key-number-bg: hsl(45, 7%, 89%);
+$theme-2-key-number-shadow: hsl(35, 11%, 61%);
+
+$theme-2-text-color: hsl(60, 10%, 19%);
+$theme-2-text-white: hsl(0, 0, 100%);
+
+// ----------------------------------------------------
+
+$theme-3-bg-main: hsl(268, 75%, 9%);
+$theme-3-bg-keypad: hsl(268, 71%, 12%);
+$theme-3-bg-screen: hsl(268, 71%, 12%);
+
+$theme-3-key-function-bg: hsl(281, 89%, 26%);
+$theme-3-key-function-shadow: hsl(285, 91%, 52%);
+$theme-3-key-output-bg: hsl(176, 100%, 44%);
+$theme-3-key-output-shadow: hsl(177, 92%, 70%);
+$theme-3-key-number-bg: hsl(268, 47%, 21%);
+$theme-3-key-number-shadow: hsl(290, 70%, 36%);
+
+$theme-3-text-color-1: hsl(52, 100%, 62%);
+$theme-3-text-color-2: hsl(198, 20%, 13%);
+$theme-3-text-white: hsl(0, 0, 100%);
+
+// FONT
+$ff-display: "League Spartan", sans-serif;
+
+$fz-sm: 1.2rem;
+$fz-md: 1.6rem;
+$fz-lg: $fz-md * 2;
+
+$fw-regu: 500;
+$fw-bold: 700;
+
+// BORDER
+$border-radius-sm: 10px;
+$border-radius-lg: 50%;
+
+// EFFECT
+$key-shadow: inset 0 -3px 0 0;

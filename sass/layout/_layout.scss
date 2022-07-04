@@ -1,0 +1,79 @@
+@use "../abstract/" as *;
+
+.container {
+  width: 90%;
+  min-width: 250px;
+  max-width: 500px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+
+  .logo {
+    font-size: 2.8rem;
+  }
+
+  .theme {
+    display: flex;
+    align-items: center;
+
+    &__title {
+      margin-right: 1.5rem;
+
+      font-size: $fz-sm;
+      font-weight: $fw-regu;
+      text-transform: uppercase;
+    }
+
+    &__list {
+      counter-reset: outline;
+
+      display: flex;
+      gap: 0.7rem;
+
+      padding: 0.4rem;
+      border-radius: $border-radius-sm;
+    }
+
+    &__item {
+      width: 1.2rem;
+      aspect-ratio: 1;
+
+      border-radius: 50%;
+      counter-increment: outline;
+      position: relative;
+
+      &::before {
+        content: counter(outline);
+        position: absolute;
+        top: 0;
+        left: 50%;
+
+        font-size: $fz-sm;
+
+        transform: translate(-50%, -150%);
+      }
+    }
+  }
+}
+
+.display {
+  padding: 3rem;
+
+  border-radius: $border-radius-sm;
+
+  text-align: right;
+  font-weight: $fw-bold;
+}
+
+.keypad {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+
+  padding: 2rem;
+
+  border-radius: $border-radius-sm;
+}
